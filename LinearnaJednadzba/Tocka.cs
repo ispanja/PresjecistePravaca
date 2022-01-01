@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LinearnaJednadzba
 {
-    class Tocka
+    public class Tocka
     {
         public double x;
         public double y;
@@ -26,6 +26,19 @@ namespace LinearnaJednadzba
         {
             this.x = apscisa;
             this.y = 0;
+        }
+
+        public double X
+        {
+            get { return x; }
+            set { x = value; }
+        }
+
+        //Property b-odsjecak ordinata
+        public double Y
+        {
+            get { return y; }
+            set { y = value; }
         }
 
         public static Tocka Sjeciste(Pravac prvi, Pravac drugi)

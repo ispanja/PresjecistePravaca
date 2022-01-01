@@ -93,5 +93,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LinearnaJednadzba\LinearnaJednadzba.csproj">
+      <Project>{2dc87ae3-8376-4342-a3fb-65e3240e3ce8}</Project>
+      <Name>LinearnaJednadzba</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

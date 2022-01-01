@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LinearnaJednadzba
+﻿namespace LinearnaJednadzba
 {
-    struct Pravac
+    public class Pravac
     {
         // y = ax + b
         // a - koeficijent smjera; b - odsječak na ordinati
@@ -14,6 +8,10 @@ namespace LinearnaJednadzba
         private double odsjecakNaY;
 
         //Konstruktor
+        public Pravac()
+        { 
+        
+        }
         public Pravac(double koeficijentSmjera, double odsjecakOrdinata)
         {
             this.koefSmjera = koeficijentSmjera;

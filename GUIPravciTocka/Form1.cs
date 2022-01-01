@@ -16,5 +16,10 @@ namespace VsiteCSharpLinearnaJednadzbaGui
         {
             InitializeComponent();
         }
+
+        private void resultDisplay1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

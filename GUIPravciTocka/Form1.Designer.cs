@@ -29,13 +29,23 @@ namespace VsiteCSharpLinearnaJednadzbaGui
         /// </summary>
         private void InitializeComponent()
         {
+            this.resultDisplay1 = new VsiteCSharpLinearnaJednadzbaGui.ResultDisplay();
             this.SuspendLayout();
+            // 
+            // resultDisplay1
+            // 
+            this.resultDisplay1.Location = new System.Drawing.Point(12, 12);
+            this.resultDisplay1.Name = "resultDisplay1";
+            this.resultDisplay1.Size = new System.Drawing.Size(407, 507);
+            this.resultDisplay1.TabIndex = 0;
+            this.resultDisplay1.Load += new System.EventHandler(this.resultDisplay1_Load);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1199, 531);
+            this.Controls.Add(this.resultDisplay1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -43,6 +53,8 @@ namespace VsiteCSharpLinearnaJednadzbaGui
         }
 
         #endregion
+
+        private ResultDisplay resultDisplay1;
     }
 }
 
