@@ -37,7 +37,7 @@ namespace VsiteCSharpLinearnaJednadzbaGui
             // 
             this.buttonEvaluate.Location = new System.Drawing.Point(344, 420);
             this.buttonEvaluate.Name = "buttonEvaluate";
-            this.buttonEvaluate.Size = new System.Drawing.Size(75, 23);
+            this.buttonEvaluate.Size = new System.Drawing.Size(119, 38);
             this.buttonEvaluate.TabIndex = 1;
             this.buttonEvaluate.Text = "&Izračunaj";
             this.buttonEvaluate.UseVisualStyleBackColor = true;

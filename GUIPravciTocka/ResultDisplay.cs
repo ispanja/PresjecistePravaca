@@ -47,5 +47,10 @@ namespace VsiteCSharpLinearnaJednadzbaGui
             textBox3Sjeciste.Text = t.ToString();
 
         }
+
+        private void numericUpDown_ValueChanged(object sender, EventArgs e)
+        {
+            FillResults();
+        }
     }
 }
