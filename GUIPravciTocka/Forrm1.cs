@@ -21,5 +21,10 @@ namespace VsiteCSharpLinearnaJednadzbaGui
         {
 
         }
+
+        private void buttonEvaluate_Click(object sender, EventArgs e)
+        {
+            resultDisplay1.FillResults();
+        }
     }
 }
