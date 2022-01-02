@@ -29,8 +29,18 @@ namespace VsiteCSharpLinearnaJednadzbaGui
         /// </summary>
         private void InitializeComponent()
         {
+            this.functionPanel1 = new DrawingQuadraticEquation.FunctionPanel();
             this.resultDisplay1 = new VsiteCSharpLinearnaJednadzbaGui.ResultDisplay();
             this.SuspendLayout();
+            // 
+            // functionPanel1
+            // 
+            this.functionPanel1.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.functionPanel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.functionPanel1.Location = new System.Drawing.Point(363, 28);
+            this.functionPanel1.Name = "functionPanel1";
+            this.functionPanel1.Size = new System.Drawing.Size(824, 484);
+            this.functionPanel1.TabIndex = 1;
             // 
             // resultDisplay1
             // 
@@ -45,6 +55,7 @@ namespace VsiteCSharpLinearnaJednadzbaGui
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1199, 531);
+            this.Controls.Add(this.functionPanel1);
             this.Controls.Add(this.resultDisplay1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -55,6 +66,7 @@ namespace VsiteCSharpLinearnaJednadzbaGui
         #endregion
 
         private ResultDisplay resultDisplay1;
+        private DrawingQuadraticEquation.FunctionPanel functionPanel1;
     }
 }
 

@@ -56,6 +56,9 @@
     <Compile Include="Forrm1.Designer.cs">
       <DependentUpon>Forrm1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FunctionPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResultDisplay.cs">
