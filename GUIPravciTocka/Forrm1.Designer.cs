@@ -48,6 +48,7 @@ namespace VsiteCSharpLinearnaJednadzbaGui
             this.resultDisplay1.Name = "resultDisplay1";
             this.resultDisplay1.Size = new System.Drawing.Size(407, 507);
             this.resultDisplay1.TabIndex = 0;
+            this.resultDisplay1.CoefficientsChanged += new System.EventHandler(this.resultDisplay1_CoefficientsChanged);
             this.resultDisplay1.Load += new System.EventHandler(this.resultDisplay1_Load);
             // 
             // Form1

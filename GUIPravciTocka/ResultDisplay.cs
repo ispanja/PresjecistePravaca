@@ -13,6 +13,7 @@ namespace VsiteCSharpLinearnaJednadzbaGui
 {
     public partial class ResultDisplay : UserControl
     {
+        public event EventHandler CoefficientsChanged;
         public ResultDisplay()
         {
             InitializeComponent();
@@ -50,7 +51,11 @@ namespace VsiteCSharpLinearnaJednadzbaGui
 
         private void numericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            FillResults();
+            this.FillResults();
+            if (CoefficientsChanged != null)
+            {
+                CoefficientsChanged(this, EventArgs.Empty);
+            }
         }
     }
 }
