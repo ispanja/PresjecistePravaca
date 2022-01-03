@@ -47,7 +47,7 @@ namespace LinearnaJednadzba
         }
         public override string ToString()
         {
-            return $"({x}, {y})";
+            return $"({x:0.00}, {y:0.00})";
         }
     }
 }

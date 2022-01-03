@@ -11,6 +11,7 @@ namespace DrawingQuadraticEquation
 	    /// </summary>
 	public delegate double Function(double x);
 
+
 	/// <summary>
 	    ///   Panel koji iscrtava funkcije zadane Function delegatom.
 	    /// </summary>
@@ -25,12 +26,19 @@ namespace DrawingQuadraticEquation
 		}
 
 		private Function m_function;
+		//drugi
+		private Function m_function_drugi;
 
 		private RectangleF m_displayBounds = new RectangleF(-5, -5, 10, 10);
 
 		public Function Function
 		{
 			set { m_function = value; }
+		}
+
+		public Function Function_drugi
+		{
+			set { m_function_drugi = value; }
 		}
 
 		protected override void OnPaint(PaintEventArgs e)
@@ -51,6 +59,23 @@ namespace DrawingQuadraticEquation
 					{
 						double x = CartesianX(i);
 						double y = m_function(x);
+						int y0 = ScreenY(y);
+						points[i] = new Point(i, y0);
+					}
+					graphics.SmoothingMode = SmoothingMode.AntiAlias;
+					graphics.DrawCurve(pen, points);
+				}
+			}
+
+			if (m_function_drugi != null)
+			{
+				using (Pen pen = new Pen(Color.Red))
+				{
+					Point[] points = new Point[ClientRectangle.Width];
+					for (int i = 0; i < ClientRectangle.Width; i++)
+					{
+						double x = CartesianX(i);
+						double y = m_function_drugi(x);
 						int y0 = ScreenY(y);
 						points[i] = new Point(i, y0);
 					}

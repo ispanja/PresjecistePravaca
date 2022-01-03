@@ -15,8 +15,10 @@ namespace VsiteCSharpLinearnaJednadzbaGui
         public Form1()
         {
             InitializeComponent();
+            
+            functionPanel1.Function_drugi = resultDisplay1.p2.Y;
             functionPanel1.Function = resultDisplay1.p1.Y;
-            functionPanel1.Function = resultDisplay1.p2.Y;
+
         }
 
         private void resultDisplay1_Load(object sender, EventArgs e)
